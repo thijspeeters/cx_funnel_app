@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitmentfunnel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <h1>Funnel week {{ weeknr }}</h1>
+    <div class="grid-container">
+        <div class="item"><h2>Instroom</h2><i class="fa-solid fa-people-group"></i><p class="result-number clr-accent-blue">{{ qualified_candidates }}<span class="clr-accent-black"> - 200</span></p></div>
+        <div class="item"><h2>Intakes</h2><i class="fa-solid fa-mug-hot"></i><p class="result-number clr-accent-blue">{{ intakes }}<span class="clr-accent-black"> - 77</span></p></div>
+        <div class="item"><h2>Voorstellen</h2><i class="fa-solid fa-phone"></i><p class="result-number clr-accent-blue">{{ offers }}<span class="clr-accent-black"> - 235</span></p></div>
+        <div class="item"><h2>Gesprekken</h2><i class="fa-solid fa-comments"></i><p class="result-number clr-accent-blue">{{ interviews }}<span class="clr-accent-black"> - 63</span></p></div>
+        <div class="item"><h2>Plaatsingen</h2><i class="fa-solid fa-handshake"></i><p class="result-number clr-accent-blue">{{ placements }}<span class="clr-accent-black"> - 8,5</span></p></div>
+    </div>
+    <script>
+        function refreshPage() {
+            location.reload(); 
+        }
+        setInterval(refreshPage, 300000); // 300000 ms = 5 minuten
+    </script>        
+</body>
+</html>

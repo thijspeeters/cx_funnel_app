@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Values</title>
+</head>
+<body>
+    <h1>Funnel week {{ weeknr }}</h1>
+    <p>Instroom: {{ qualified_candidates }}</p>
+    <p>Intakes: {{ intakes }}</p>
+    <p>Voorstellen: {{ offers }}</p>
+    <p>Gesprekken: {{ interviews }}</p>
+    <p>Plaatsingen: {{ placements }}</p>
+
+    <script>
+        function refreshPage() {
+            location.reload(); 
+        }
+        setInterval(refreshPage, 300000); // 300000 ms = 5 minuten
+    </script>
+</body>
+</html>
