@@ -55,4 +55,4 @@ def index():
     return render_template('funnel.html', weeknr=weeknr, qualified_candidates=qualified_candidates, intakes=intakes, offers=offers, interviews=interviews, placements=placements)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
