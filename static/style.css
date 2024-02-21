@@ -59,6 +59,14 @@ i {
     color: black;
 }
 
+.success-target {
+    color: #5cb85c;
+
+}
+
+.small-icon {
+    font-size: 2rem;
+}
 
 @media (max-width: 1200px) {
     .grid-container {

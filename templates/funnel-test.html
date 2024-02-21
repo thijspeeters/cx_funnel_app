@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruitmentfunnel</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 <body>
     <h1>Funnel week {{ weeknr }}</h1>
     <div class="grid-container">
-        <div class="item"><h2>Instroom</h2><i class="fa-solid fa-people-group"></i><p class="result-number {{ 'success-target' if qualified_candidates => '200' else 'clr-accent-blue' }}">{{ qualified_candidates }}<span class="clr-accent-black"> - 200</span>  {{ '<i class="fa-solid fa-check small-icon success-target"></i>' if qualified_candidates > 200 else '' }}</p></div>
+        <div class="item"><h2>Instroom</h2><i class="fa-solid fa-people-group"></i><p class="result-number {{ 'success-green' if qualified_candidates => '200' else 'clr-accent-blue' }}">{{ qualified_candidates }}<span class="clr-accent-black"> - 200</span>  {{ '<i class="fa-solid fa-check small-icon success-green"></i>' if qualified_candidates > 200 else '' }}</p></div>
         <div class="item"><h2>Intakes</h2><i class="fa-solid fa-mug-hot"></i><p class="result-number clr-accent-blue">{{ intakes }}<span class="clr-accent-black"> - 77</span></p></div>
         <div class="item"><h2>Voorstellen</h2><i class="fa-solid fa-phone"></i><p class="result-number clr-accent-blue">{{ offers }}<span class="clr-accent-black"> - 235</span></p></div>
         <div class="item"><h2>Gesprekken</h2><i class="fa-solid fa-comments"></i><p class="result-number clr-accent-blue">{{ interviews }}<span class="clr-accent-black"> - 63</span></p></div>
