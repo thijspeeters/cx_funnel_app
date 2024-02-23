@@ -1,5 +1,5 @@
 body {
-    background-image: url("bg-black.jpg");
+    background-image: url("../static/bg-black.jpg");
     background-size: cover;
 }
 
@@ -26,6 +26,26 @@ h2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 kolommen met gelijke breedte */
     gap: 2rem; /* Spacing tussen de kolommen */
+}
+
+.item-container {
+    /* background-color: grey; */
+    text-align: center;
+}
+
+.item-container > i {
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: white;
+}
+
+.green-circle {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #5cb85c;
 }
 
 .item {
@@ -67,6 +87,7 @@ i {
 .small-icon {
     font-size: 2rem;
 }
+
 
 @media (max-width: 1200px) {
     .grid-container {
