@@ -13,19 +13,19 @@
 <body>
     <h1>Funnel week {{ weeknr }}</h1>
     <div class="grid-container">
-        <div class="item-container"><div class="item"><h2>Instroom</h2><i class="fa-solid fa-people-group"></i><p class="result-number clr-accent-blue">{{ qualified_candidates }}<span class="clr-accent-black"> - 200</span>  </p></div>            {% if qualified_candidates > 200 %}
+        <div class="item-container"><div class="item"><h2>Instroom</h2><i class="fa-solid fa-people-group"></i><p class="result-number clr-accent-blue">{{ qualified_candidates }}<span class="clr-accent-black"> - 200</span>  </p></div>            {% if qualified_candidates > 199 %}
         <i class="fa-solid fa-check green-circle"></i>
     {% endif %}
     </div>
-        <div class="item-container"><div class="item"><h2>Intakes</h2><i class="fa-solid fa-mug-hot"></i><p class="result-number clr-accent-blue">{{ intakes }}<span class="clr-accent-black"> - 77</span></p></div>            {% if intakes > 77 %}
+        <div class="item-container"><div class="item"><h2>Intakes</h2><i class="fa-solid fa-mug-hot"></i><p class="result-number clr-accent-blue">{{ intakes }}<span class="clr-accent-black"> - 77</span></p></div>            {% if intakes > 76 %}
         <i class="fa-solid fa-check green-circle"></i>
     {% endif %}
 </div>
-        <div class="item-container"><div class="item"><h2>Voorstellen</h2><i class="fa-solid fa-phone"></i><p class="result-number clr-accent-blue">{{ offers }}<span class="clr-accent-black"> - 235</span></p></div>            {% if offers > 235 %}
+        <div class="item-container"><div class="item"><h2>Voorstellen</h2><i class="fa-solid fa-phone"></i><p class="result-number clr-accent-blue">{{ offers }}<span class="clr-accent-black"> - 235</span></p></div>            {% if offers > 234 %}
         <i class="fa-solid fa-check green-circle"></i>
     {% endif %}
 </div>
-        <div class="item-container"><div class="item"><h2>Gesprekken</h2><i class="fa-solid fa-comments"></i><p class="result-number clr-accent-blue">{{ interviews }}<span class="clr-accent-black"> - 63</span></p></div>            {% if interviews > 63 %}
+        <div class="item-container"><div class="item"><h2>Gesprekken</h2><i class="fa-solid fa-comments"></i><p class="result-number clr-accent-blue">{{ interviews }}<span class="clr-accent-black"> - 63</span></p></div>            {% if interviews > 62 %}
         <i class="fa-solid fa-check green-circle"></i>
     {% endif %}
 </div>
