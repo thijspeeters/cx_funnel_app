@@ -36,7 +36,7 @@ def get_activities(week_nr, stage):
      
     if response.status_code == 200:
         data_dict = xmltodict.parse(response.content)
-        count_value = data_dict['array']['@count']
+        count_value = int(data_dict['array']['@count'])
         
         print(f"Aantal activiteiten: {count_value}")
 
