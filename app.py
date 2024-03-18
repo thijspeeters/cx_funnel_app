@@ -46,7 +46,7 @@ def get_activities(week_nr, stage):
 
 @app.route('/')
 def index():
-    weeknr = 11
+    weeknr = 12
     qualified_candidates = get_activities(weeknr, 27)
     intakes = get_activities(weeknr, 5)
     offers = get_activities(weeknr, 6)
